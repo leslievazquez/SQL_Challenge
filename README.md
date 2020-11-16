@@ -4,28 +4,34 @@
 
 <h1 align ="center"><span>Employee Database:<br/>A Mystery in Two Parts</span></h1>
 
-The purpose of this data analysis was to create an employee SQL database using pgAdmin PostgreSQL Tools based on six csv files from the mock company Pewlett-Hackard. 
+The purpose of this data analysis was to create an employee SQL database using pgAdmin PostgreSQL Tools based on 6 CSV files from the mock company Pewlett-Hackard. The datasets provided included information on the employees of the corporation from the 1980s and 1990s.
 
 ### Data Modeling
-The Entity Relationship Diagram (ERD) was created using the tool on the website [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com).
+
+The first step of this analysis involved creating an Entity Relationship Diagram (ERD) based on the headers of the data in the 6 CSV files. The ERD was created using the tool on the website [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com). 
+
+### Data Engineering
+
+The second step of this analysis involved creating a table schema for each of the 6 CSV Use the information you have to create a table schema for each of the six CSV files. The schema identifies primary keys vs foreign keys and includes other constraints. After creating the tables, each CSV file was imported into the corresponding SQL table. 
 
 ### Data Analysis
 
+The third step of this analysis used the data collected from CSV files that was imported into the SQL database to answer the following questions using SQL queries:
 
-Data collected from CSVs is then loaded to the SQL database and the following analysis questions are answered using SQL queries:
+1. List the following details of each employee: employee number, last name, first name, gender, and salary.
 
-List the following details of each employee: employee number, last name, first name, gender, and salary.
+2. List employees who were hired in 1986.
 
-List employees who were hired in 1986.
+3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name, and start and end employment dates.
 
-List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name, and start and end employment dates.
+4. List the department of each employee with the following information: employee number, last name, first name, and department name.
 
-List the department of each employee with the following information: employee number, last name, first name, and department name.
+5. List all employees whose first name is "Hercules" and last names begin with "B."
 
-List all employees whose first name is "Hercules" and last names begin with "B."
+6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
 
-List all employees in the Sales department, including their employee number, last name, first name, and department name.
+7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
 
-List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
+8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
-In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+
