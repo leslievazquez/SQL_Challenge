@@ -34,4 +34,16 @@ The third step of this analysis used the data collected from CSV files that was 
 
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
+### Data Visualization 
 
+The last step of this data analysis involved using Pandas to create a histogram of the most common salary ranges for employees and a bar chart of the average salary by title. 
+
+As part of this analysis, the SQL database was imported into Pandas using the code below. 
+
+```
+from sqlalchemy import create_engine
+engine = create_engine('postgresql://localhost:5432/<your_db_name>')
+connection = engine.connect()
+```
+
+The data analysis/visualization in Jupyter Notebook includes a search for the employee ID number `499942` to identify the job title and the salary for this position. 
